@@ -35,6 +35,13 @@ public class Rol {
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	private List<Persona> personas;
+
+	public Rol(int idrol, String nombre) {
+		super();
+		this.idrol = idrol;
+		this.nombre = nombre;
+	}
+	
 	
 	
 }
